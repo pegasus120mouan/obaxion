@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Redirection des URLs sans extension vers les fichiers PHP
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Redirection forcée pour supprimer .php des URLs
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
+
+# Page d'accueil par défaut
+DirectoryIndex index.php

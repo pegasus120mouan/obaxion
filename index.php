@@ -1,180 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obaxion - Solutions Informatiques Intégrées</title>
     <meta name="description" content="Obaxion, spécialiste en intégration de solutions informatiques : Cybersécurité, Développement, Marketing Digital, SOC et Gestion de Projets">
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#213138',
-                        secondary: '#6e9498',
-                        accent: '#8bb5ba',
-                        dark: '#1a2b32',
-                        light: '#f0f7f8'
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Amélioration du menu déroulant */
-        .dropdown-menu {
-            transition: all 0.3s ease;
-            pointer-events: none;
-        }
-        .dropdown-group:hover .dropdown-menu {
-            pointer-events: auto;
-        }
-        .dropdown-menu::before {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: 0;
-            right: 0;
-            height: 10px;
-            background: transparent;
-        }
-    </style>
+    <?php include 'header.php'; ?>
 </head>
 <body class="font-sans">
-    <!-- Navigation -->
-    <nav class="bg-white/98 backdrop-blur-md shadow-lg fixed w-full z-50 border-b-2 border-secondary/20" style="box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <a href="index.php" class="flex items-center">
-                            <div class="flex items-center">
-                                <!-- Logo depuis img -->
-                                <img src="img/logo.png" alt="Obaxion Logo" class="w-16 h-16 mr-3 object-contain">
-                                <!-- Texte OBAXION stylisé -->
-                                <div class="flex flex-col">
-                                    <span class="text-2xl leading-none" style="font-family: 'Orbitron', monospace; letter-spacing: 2px; color: #6e9498; font-weight: 900;">OBAXION</span>
-                                    <span class="text-xs px-2 py-0.5 rounded-full mt-1 inline-block w-fit" style="font-family: 'Orbitron', monospace; color: #213138; background-color: #f0f9ff; font-weight: 900;">CYBER SECURITY</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="#accueil" class="px-4 py-2 text-primary hover:text-dark hover:bg-secondary/10 rounded-xl transition duration-200 font-semibold">Accueil</a>
-                    
-                    <!-- Services Dropdown -->
-                    <div class="relative dropdown-group group">
-                        <button class="px-4 py-2 text-primary hover:text-dark hover:bg-secondary/10 rounded-xl transition duration-200 font-semibold flex items-center">
-                            Services
-                            <i class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition duration-200"></i>
-                        </button>
-                        
-                        <!-- Dropdown Menu -->
-                        <div class="dropdown-menu absolute top-full left-0 mt-2 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
-                            <div class="p-2">
-                                <a href="cybersecurite.php" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-shield-alt text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">Cybersécurité</div>
-                                        <div class="text-xs text-gray-500">Protection & audit sécurité</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="infrastructure.php" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-network-wired text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">Infrastructure & Réseau</div>
-                                        <div class="text-xs text-gray-500">Câblage & téléphonie IP</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="digitalisation.php" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-rocket text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">AMOA & Digitalisation</div>
-                                        <div class="text-xs text-gray-500">Transformation digitale</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="soc-surveillance.php" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-eye text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">SOC & Surveillance</div>
-                                        <div class="text-xs text-gray-500">Monitoring 24/7/365</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="#services" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-graduation-cap text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">Formation & Sensibilisation</div>
-                                        <div class="text-xs text-gray-500">Cybersécurité & RGPD</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="#services" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-user-tie text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">Expertise RH</div>
-                                        <div class="text-xs text-gray-500">Recrutement IT spécialisé</div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                            <!-- Call to Action at bottom -->
-                            <div class="border-t border-gray-100 p-4">
-                                <a href="#contact" class="flex items-center justify-center w-full px-4 py-2 bg-gradient-to-r from-secondary to-accent text-white rounded-xl font-semibold hover:shadow-lg transition duration-200 transform hover:scale-105">
-                                    <i class="fas fa-calendar-check mr-2 text-sm"></i>
-                                    Consultation gratuite
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="apropos.php" class="px-4 py-2 text-primary hover:text-dark hover:bg-secondary/10 rounded-xl transition duration-200 font-semibold">À propos</a>
-                    <a href="#contact" class="px-4 py-2 text-primary hover:text-dark hover:bg-secondary/10 rounded-xl transition duration-200 font-semibold">Contact</a>
-                    <div class="ml-4 pl-4 border-l border-gray-200">
-                        <a href="#contact" class="inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-secondary to-accent text-white rounded-xl font-semibold hover:shadow-lg transition duration-200 transform hover:scale-105">
-                            <i class="fas fa-calendar-check mr-2 text-sm"></i>
-                            Consultation gratuite
-                        </a>
-                    </div>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#accueil" class="block px-3 py-2 text-gray-700 hover:text-primary">Accueil</a>
-                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-primary">Services</a>
-                <a href="#apropos" class="block px-3 py-2 text-gray-700 hover:text-primary">À propos</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-primary">Contact</a>
-            </div>
-        </div>
-    </nav>
+    <?php include 'nav.php'; ?>
 
     <!-- Hero Section -->
     <section id="accueil" class="text-white pt-20 relative overflow-hidden" style="background-image: url('img/banner/banner-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
@@ -263,7 +95,7 @@
                             <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i>Sécurisation réseau 24/7</li>
                         </ul>
                         <div class="mt-6">
-                            <a href="cybersecurite.php" class="inline-block bg-primary hover:bg-dark text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                            <a href="cybersecurite" class="inline-block bg-primary hover:bg-dark text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
                                 En savoir plus
                             </a>
                         </div>
@@ -287,7 +119,7 @@
                             <li class="flex items-center"><i class="fas fa-check-circle text-secondary mr-3"></i>Solutions collaboratives</li>
                         </ul>
                         <div class="mt-6">
-                            <a href="infrastructure.php" class="inline-block bg-secondary hover:bg-accent text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                            <a href="infrastructure" class="inline-block bg-secondary hover:bg-accent text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
                                 En savoir plus
                             </a>
                         </div>
@@ -311,7 +143,7 @@
                             <li class="flex items-center"><i class="fas fa-check-circle text-accent mr-3"></i>Transformation agile</li>
                         </ul>
                         <div class="mt-6">
-                            <a href="digitalisation.php" class="inline-block bg-accent hover:bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                            <a href="digitalisation" class="inline-block bg-accent hover:bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
                                 En savoir plus
                             </a>
                         </div>
@@ -711,7 +543,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-900">Adresse</h4>
-                                    <p class="text-gray-600">123 Rue de l'Innovation<br>75001 Paris, France</p>
+                                    <p class="text-gray-600">Cocody Abidjan</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -720,7 +552,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-900">Téléphone</h4>
-                                    <p class="text-gray-600">+33 1 23 45 67 89</p>
+                                    <p class="text-gray-600">+226 65 65 65 65</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -729,7 +561,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-900">Email</h4>
-                                    <p class="text-gray-600">contact@obaxion.com</p>
+                                    <p class="text-gray-600">contact@obaxion.ci</p>
                                 </div>
                             </div>
                         </div>
@@ -763,109 +595,8 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">OBAXION</h3>
-                    <p class="text-gray-400 mb-4">
-                        Votre partenaire de confiance pour l'intégration de solutions informatiques complètes.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i class="fab fa-linkedin text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i class="fab fa-twitter text-xl"></i>
-                        </a>
-                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
-                            <i class="fab fa-facebook text-xl"></i>
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition duration-300">Cybersécurité</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Développement</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Marketing Digital</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">SOC</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Entreprise</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition duration-300">À propos</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Équipe</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Carrières</a></li>
-                        <li><a href="#" class="hover:text-white transition duration-300">Blog</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>123 Rue de l'Innovation</li>
-                        <li>75001 Paris, France</li>
-                        <li>+33 1 23 45 67 89</li>
-                        <li>contact@obaxion.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Obaxion. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
 
-    <script>
-        // Amélioration du menu déroulant Services
-        document.addEventListener('DOMContentLoaded', function() {
-            const dropdownGroup = document.querySelector('.dropdown-group');
-            const dropdownMenu = document.querySelector('.dropdown-menu');
-            let timeoutId;
-
-            if (dropdownGroup && dropdownMenu) {
-                // Quand on survole le groupe
-                dropdownGroup.addEventListener('mouseenter', function() {
-                    clearTimeout(timeoutId);
-                    dropdownMenu.classList.remove('opacity-0', 'invisible', 'translate-y-2');
-                    dropdownMenu.classList.add('opacity-100', 'visible', 'translate-y-0');
-                });
-
-                // Quand on quitte le groupe
-                dropdownGroup.addEventListener('mouseleave', function() {
-                    timeoutId = setTimeout(function() {
-                        dropdownMenu.classList.add('opacity-0', 'invisible', 'translate-y-2');
-                        dropdownMenu.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                    }, 150); // Délai de 150ms avant fermeture
-                });
-
-                // Annuler la fermeture si on survole le menu
-                dropdownMenu.addEventListener('mouseenter', function() {
-                    clearTimeout(timeoutId);
-                });
-
-                // Fermer quand on quitte le menu
-                dropdownMenu.addEventListener('mouseleave', function() {
-                    timeoutId = setTimeout(function() {
-                        dropdownMenu.classList.add('opacity-0', 'invisible', 'translate-y-2');
-                        dropdownMenu.classList.remove('opacity-100', 'visible', 'translate-y-0');
-                    }, 150);
-                });
-            }
-
-            // Menu mobile toggle
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            if (mobileMenuButton && mobileMenu) {
-                mobileMenuButton.addEventListener('click', function() {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
-        });
-    </script>
-    <script src="script.js"></script>
+    <?php include 'scripts.php'; ?>
 </body>
 </html>

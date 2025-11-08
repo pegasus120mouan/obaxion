@@ -5,151 +5,27 @@ $page_description = "Solutions complètes de cybersécurité pour protéger vos 
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $page_title; ?></title>
     <meta name="description" content="<?php echo $page_description; ?>">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#1e40af',
-                        secondary: '#3b82f6',
-                        accent: '#06b6d4'
-                    }
-                }
-            }
-        }
-    </script>
+    <?php include 'header.php'; ?>
 </head>
 <body class="font-sans">
-    <!-- Navigation -->
-    <nav class="bg-white/95 backdrop-blur-md shadow-sm fixed w-full z-50 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <a href="index.php" class="flex items-center">
-                            <div class="w-10 h-10 bg-gradient-to-br from-red-600 to-red-800 rounded-xl flex items-center justify-center mr-3">
-                                <span class="text-white font-bold text-lg">O</span>
-                            </div>
-                            <span class="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">OBAXION</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="hidden md:flex items-center space-x-1">
-                    <a href="index.php" class="px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-xl transition duration-200 font-medium">Accueil</a>
-                    
-                    <!-- Services Dropdown -->
-                    <div class="relative group">
-                        <button class="px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-xl transition duration-200 font-medium flex items-center">
-                            Services
-                            <i class="fas fa-chevron-down ml-2 text-xs group-hover:rotate-180 transition duration-200"></i>
-                        </button>
-                        
-                        <!-- Dropdown Menu -->
-                        <div class="absolute top-full left-0 mt-2 w-72 bg-white rounded-2xl shadow-2xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 transform translate-y-2 group-hover:translate-y-0 z-50">
-                            <div class="p-2">
-                                <a href="cybersecurite.php" class="flex items-center px-4 py-3 text-gray-700 hover:bg-red-50 hover:text-red-700 rounded-xl transition duration-200 group/item bg-red-50 border border-red-200">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-shield-alt text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold text-red-700">Cybersécurité</div>
-                                        <div class="text-xs text-red-600">Protection & audit sécurité</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="infrastructure.php" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-network-wired text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">Infrastructure & Réseau</div>
-                                        <div class="text-xs text-gray-500">Câblage & téléphonie IP</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="digitalisation.php" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-rocket text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">AMOA & Digitalisation</div>
-                                        <div class="text-xs text-gray-500">Transformation digitale</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="soc-surveillance.php" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-eye text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">SOC & Surveillance</div>
-                                        <div class="text-xs text-gray-500">Monitoring 24/7/365</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="index.php#services" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-graduation-cap text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">Formation & Sensibilisation</div>
-                                        <div class="text-xs text-gray-500">Cybersécurité & RGPD</div>
-                                    </div>
-                                </a>
-                                
-                                <a href="index.php#services" class="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-700 rounded-xl transition duration-200 group/item">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center mr-3 group-hover/item:scale-110 transition duration-200">
-                                        <i class="fas fa-user-tie text-white text-sm"></i>
-                                    </div>
-                                    <div>
-                                        <div class="font-semibold">Expertise RH</div>
-                                        <div class="text-xs text-gray-500">Recrutement IT spécialisé</div>
-                                    </div>
-                                </a>
-                            </div>
-                            
-                            <!-- Call to Action at bottom -->
-                            <div class="border-t border-gray-100 p-4">
-                                <a href="index.php#contact" class="flex items-center justify-center w-full px-4 py-2 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-xl font-semibold hover:shadow-lg transition duration-200 transform hover:scale-105">
-                                    <i class="fas fa-shield-alt mr-2 text-sm"></i>
-                                    Audit sécurité gratuit
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <a href="index.php#apropos" class="px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-xl transition duration-200 font-medium">À propos</a>
-                    <a href="index.php#contact" class="px-4 py-2 text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-xl transition duration-200 font-medium">Contact</a>
-                    <div class="ml-4 pl-4 border-l border-gray-200">
-                        <a href="index.php#contact" class="inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-800 text-white rounded-xl font-semibold hover:shadow-lg transition duration-200 transform hover:scale-105">
-                            <i class="fas fa-shield-alt mr-2 text-sm"></i>
-                            Audit sécurité gratuit
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php include 'nav.php'; ?>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-red-600 to-red-800 text-white pt-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <section class="text-white pt-20 relative overflow-hidden" style="background-image: url('img/banner/soc1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="text-center">
                 <div class="mb-6">
-                    <span class="inline-block bg-white/20 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <span class="inline-block bg-red-600/30 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 border border-red-500/50" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.8); backdrop-filter: blur(10px);">
                         🛡️ Cybersécurité Avancée
                     </span>
                 </div>
-                <h1 class="text-4xl md:text-6xl font-bold mb-8">
-                    Protégez vos <span class="text-red-200">Données Critiques</span>
+                <h1 class="text-4xl md:text-6xl font-bold mb-8" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">
+                    Protégez vos <span class="text-white" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">Données Critiques</span>
                 </h1>
-                <p class="text-xl md:text-2xl mb-12 max-w-4xl mx-auto text-red-100">
+                <p class="text-xl md:text-2xl mb-12 max-w-4xl mx-auto text-white" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.8); background: rgba(0,0,0,0.3); padding: 20px; border-radius: 15px; backdrop-filter: blur(5px);">
                     Solutions complètes de sécurité avancée pour protéger vos infrastructures contre les cybermenaces modernes
                 </p>
                 <div class="flex flex-col sm:flex-row gap-6 justify-center">
@@ -305,58 +181,18 @@ $page_description = "Solutions complètes de cybersécurité pour protéger vos 
                 Contactez nos experts en cybersécurité pour un audit gratuit de votre infrastructure
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="index.php#contact" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition duration-300 transform hover:scale-105">
+                <a href="index#contact" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition duration-300 transform hover:scale-105">
                     📞 Demander un audit gratuit
                 </a>
-                <a href="index.php#contact" class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition duration-300">
+                <a href="index#contact" class="border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition duration-300">
                     💬 Parler à un expert
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4">OBAXION</h3>
-                    <p class="text-gray-400 mb-4">
-                        Gardiens de votre transformation digitale et de votre cybersécurité.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="cybersecurite.php" class="hover:text-white transition duration-300">Cybersécurité</a></li>
-                        <li><a href="index.php#services" class="hover:text-white transition duration-300">Infrastructure</a></li>
-                        <li><a href="index.php#services" class="hover:text-white transition duration-300">SOC</a></li>
-                        <li><a href="index.php#services" class="hover:text-white transition duration-300">Formation</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Entreprise</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="index.php#apropos" class="hover:text-white transition duration-300">À propos</a></li>
-                        <li><a href="index.php#contact" class="hover:text-white transition duration-300">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li>123 Rue de l'Innovation</li>
-                        <li>75001 Paris, France</li>
-                        <li>+33 1 23 45 67 89</li>
-                        <li>contact@obaxion.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Obaxion. Tous droits réservés.</p>
-            </div>
-        </div>
-    </footer>
+    <?php include 'footer.php'; ?>
 
-    <script src="script.js"></script>
+    <?php include 'scripts.php'; ?>
 </body>
 </html>
