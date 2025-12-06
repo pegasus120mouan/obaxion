@@ -3,7 +3,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">OBAXION</h3>
+                    <img src="img/logo.png" alt="Obaxion Logo" class="h-20 mb-4">
                     <p class="text-gray-400 mb-4">
                         Votre Bouclier dans l'Univers Numérique. Experts en cybersécurité et solutions digitales innovantes.
                     </p>
@@ -15,6 +15,7 @@
                         <li><a href="infrastructure" class="hover:text-white transition duration-300">Infrastructure</a></li>
                         <li><a href="digitalisation" class="hover:text-white transition duration-300">Digitalisation</a></li>
                         <li><a href="soc-surveillance" class="hover:text-white transition duration-300">SOC & Surveillance</a></li>
+                        <li><a href="formation-sensibilisation" class="hover:text-white transition duration-300">Formation & Sensibilisation</a></li>
                     </ul>
                 </div>
                 <div>
@@ -30,8 +31,8 @@
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
                     <ul class="space-y-2 text-gray-400">
                         <li><i class="fas fa-map-marker-alt mr-2"></i>Cocody Abidjan</li>
-                        <li><i class="fas fa-phone mr-2"></i>+226 65 65 65 65</li>
-                        <li><i class="fas fa-envelope mr-2"></i>contact@obaxion.ci</li>
+                        <li><i class="fas fa-phone mr-2"></i>+225 07 08 29 29 91</li>
+                        <li><i class="fas fa-envelope mr-2"></i>contact@obaxion.com</li>
                     </ul>
                 </div>
             </div>

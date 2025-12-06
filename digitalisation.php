@@ -342,27 +342,27 @@ $page_description = "Accompagnement stratégique pour une transformation digital
             
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
                 <div class="bg-white p-6 rounded-xl text-center hover:shadow-lg transition duration-300 border border-gray-200">
-                    <div class="text-2xl font-bold text-blue-600 mb-2">React</div>
+                    <div class="text-2xl font-bold text-blue-600 mb-2"><img src="img/partenaires/amoa/react.png" alt="React"></div>
                     <div class="text-sm text-gray-500">Interface Utilisateur</div>
                 </div>
                 <div class="bg-white p-6 rounded-xl text-center hover:shadow-lg transition duration-300 border border-gray-200">
-                    <div class="text-2xl font-bold text-green-600 mb-2">Node.js</div>
+                    <div class="text-2xl font-bold text-green-600 mb-2"><img src="img/partenaires/amoa/nodejs.png"></div>
                     <div class="text-sm text-gray-500">Backend API</div>
                 </div>
                 <div class="bg-white p-6 rounded-xl text-center hover:shadow-lg transition duration-300 border border-gray-200">
-                    <div class="text-2xl font-bold text-purple-600 mb-2">Laravel</div>
+                    <div class="text-2xl font-bold text-purple-600 mb-2"><img src="img/partenaires/amoa/laravel.png"></div>
                     <div class="text-sm text-gray-500">Framework PHP</div>
                 </div>
                 <div class="bg-white p-6 rounded-xl text-center hover:shadow-lg transition duration-300 border border-gray-200">
-                    <div class="text-2xl font-bold text-orange-600 mb-2">Flutter</div>
+                    <div class="text-2xl font-bold text-orange-600 mb-2"><img src="img/partenaires/amoa/flutter.png"></div>
                     <div class="text-sm text-gray-500">Mobile Cross-Platform</div>
                 </div>
                 <div class="bg-white p-6 rounded-xl text-center hover:shadow-lg transition duration-300 border border-gray-200">
-                    <div class="text-2xl font-bold text-blue-800 mb-2">Docker</div>
+                    <div class="text-2xl font-bold text-blue-800 mb-2"><img src="img/partenaires/amoa/docker.png"></div>
                     <div class="text-sm text-gray-500">Containerisation</div>
                 </div>
                 <div class="bg-white p-6 rounded-xl text-center hover:shadow-lg transition duration-300 border border-gray-200">
-                    <div class="text-2xl font-bold text-red-600 mb-2">AWS</div>
+                    <div class="text-2xl font-bold text-red-600 mb-2"><img src="img/partenaires/amoa/aws.png"></div>
                     <div class="text-sm text-gray-500">Cloud Infrastructure</div>
                 </div>
             </div>

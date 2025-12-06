@@ -552,7 +552,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-900">Téléphone</h4>
-                                    <p class="text-gray-600">+226 65 65 65 65</p>
+                                    <p class="text-gray-600">+225 07 08 29 29 91</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -561,7 +561,7 @@
                                 </div>
                                 <div>
                                     <h4 class="font-semibold text-gray-900">Email</h4>
-                                    <p class="text-gray-600">contact@obaxion.ci</p>
+                                    <p class="text-gray-600">contact@obaxion.com</p>
                                 </div>
                             </div>
                         </div>

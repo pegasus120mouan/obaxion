@@ -142,19 +142,19 @@ $page_description = "Conception et déploiement d'infrastructures réseau robust
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
                 <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition duration-300">
-                    <div class="text-2xl font-bold text-blue-600 mb-2">Cisco</div>
+                    <div class="text-2xl font-bold text-blue-600 mb-2"><img src="img/partenaires/infra/cisco.png" alt="Cisco"></div>
                     <div class="text-xs text-gray-500">Networking Solutions</div>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition duration-300">
-                    <div class="text-2xl font-bold text-green-600 mb-2">Hikvision</div>
+                    <div class="text-2xl font-bold text-green-600 mb-2"><img src="img/partenaires/infra/hikvision.png" alt="Hikvision"></div>
                     <div class="text-xs text-gray-500">Video Surveillance</div>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition duration-300">
-                    <div class="text-2xl font-bold text-purple-600 mb-2">Avaya</div>
+                    <div class="text-2xl font-bold text-purple-600 mb-2"><img src="img/partenaires/infra/avaya.png" alt="Avaya"></div>
                     <div class="text-xs text-gray-500">Unified Communications</div>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl text-center hover:shadow-md transition duration-300">
-                    <div class="text-2xl font-bold text-orange-600 mb-2">Microsoft</div>
+                    <div class="text-2xl font-bold text-orange-600 mb-2"><img src="img/partenaires/infra/microsoft.png" alt="Avaya"></div>
                     <div class="text-xs text-gray-500">Teams & Collaboration</div>
                 </div>
             </div>
